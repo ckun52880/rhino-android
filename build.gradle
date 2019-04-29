@@ -1,9 +1,10 @@
 buildscript {
     repositories {
         mavenCentral()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.android.tools.build:gradle:3.4.0'
     }
 }
 
@@ -25,6 +26,7 @@ ext.devs = [
 allprojects {
     repositories {
         mavenCentral()
+        google()
     }
 
     group = "io.apisense"
