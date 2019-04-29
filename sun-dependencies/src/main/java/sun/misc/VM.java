@@ -298,9 +298,7 @@ public class VM {
         // It can be disabled by setting a system property (but only if
         // the logging stack walk is not enabled)
         s = props.getProperty("jdk.reflect.allowGetCallerClass");
-        allowGetCallerClass = (s != null
-                ? (s.isEmpty() || Boolean.parseBoolean(s))
-                : true) ||
+        allowGetCallerClass = (s == null || (s.isEmpty() || Boolean.parseBoolean(s))) ||
                 Boolean.valueOf(props.getProperty("jdk.logging.allowStackWalkSearch"));
 
         // Remove other private system properties
