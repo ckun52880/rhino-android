@@ -7,9 +7,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
     // JSR 223 (javax.script package)
-    api 'com.sun.phobos:jsr223-api:1.0'
+    compile  'com.sun.phobos:jsr223-api:1.0'
     // Rhino engine implementation by Mozilla
-    api 'org.mozilla:rhino:1.7.13'
+    compile  'org.mozilla:rhino:1.7.13'
 }
 
 task javadocJar(type: Jar) {
