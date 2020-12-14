@@ -15,7 +15,7 @@ Add the following repository and dependency to your `build.gradle`:
 
 ```
 dependencies {
-    compile 'io.apisense:rhino-android:1.0'
+    implementation 'com.github.gedoor:rhino-android:1.5'
 }
 ```
 
