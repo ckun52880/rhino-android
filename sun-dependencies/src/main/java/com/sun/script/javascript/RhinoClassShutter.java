@@ -53,6 +53,9 @@ final class RhinoClassShutter implements ClassShutter {
             // For now, we just have AccessController. Allowing scripts
             // to this class will allow it to execute doPrivileged in
             // bootstrap context. We can add more classes for other reasons.
+            protectedClasses.put("java.lang.Class", Boolean.TRUE);
+            protectedClasses.put("java.lang.Runtime", Boolean.TRUE);
+            protectedClasses.put("java.io.File", Boolean.TRUE);
             protectedClasses.put("java.security.AccessController", Boolean.TRUE);
         }
         return theInstance;

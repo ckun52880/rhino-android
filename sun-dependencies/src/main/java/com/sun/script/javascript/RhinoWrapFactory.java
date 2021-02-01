@@ -73,10 +73,21 @@ final class RhinoWrapFactory extends WrapFactory {
             // field of NativeJavaObject.
             javaObject = obj;
         }
+
+        @Override
+        public Object get(String name, Scriptable start) {
+            if (name.equals("getClass") || name.equals("exec")) {
+                return NOT_FOUND;
+            }
+            return super.get(name, start);
+        }
     }
 
     public Scriptable wrapAsJavaObject(Context cx, Scriptable scope,
             Object javaObject, Class staticType) {
+        if (scope != null) {
+            scope.delete("Packages");
+        }
         SecurityManager sm = System.getSecurityManager();
         ClassShutter classShutter = RhinoClassShutter.getInstance();
         if (javaObject instanceof ClassLoader) {
