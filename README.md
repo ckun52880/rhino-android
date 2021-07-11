@@ -1,6 +1,5 @@
 [![Travis](https://img.shields.io/travis/APISENSE/rhino-android.svg)](https://travis-ci.org/APISENSE/rhino-android)
 [![Codecov](https://img.shields.io/codecov/c/github/APISENSE/rhino-android.svg)](https://codecov.io/gh/APISENSE/rhino-android)
-[![Maven Central](https://img.shields.io/maven-central/v/io.apisense/rhino-android.svg)](http://search.maven.org/#artifactdetails%7Cio.apisense%7Crhino-android%7C1.0%7Cjar)
 
 
 # Rhino script engine
@@ -15,7 +14,7 @@ Add the following repository and dependency to your `build.gradle`:
 
 ```
 dependencies {
-    implementation 'com.github.gedoor:rhino-android:1.5'
+    implementation 'com.github.gedoor:rhino-android:1.6'
 }
 ```
 
