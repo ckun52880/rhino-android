@@ -14,7 +14,7 @@ Add the following repository and dependency to your `build.gradle`:
 
 ```
 dependencies {
-    implementation 'com.github.gedoor:rhino-android:1.6'
+    implementation 'com.github.gedoor:rhino-android:1.8'
 }
 ```
 
